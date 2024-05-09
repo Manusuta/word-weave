@@ -30,6 +30,10 @@ app.use("/user",user)
 const userResult=require("./controller/userData.controller.js")
 app.use("/userResult",userResult)
 
+app.get('/', (req, res)=> {
+    res.send("Thi is backend server");
+})
+
 app.listen(Port, () => { console.log(`Server is running on port ${Port}`) });
 
 
